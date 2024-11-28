@@ -1,0 +1,238 @@
+/* Estilo general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: cambioFondo 15s infinite alternate;
+  }
+  
+  /* Keyframes para cambiar de fondo */
+  @keyframes cambioFondo {
+    0% {
+      background-image: url('assets/monumento.png');
+    }
+    33% {
+      background-image: url('assets/PueblitoBoyacense.jpg');
+    }
+    66% {
+      background-image: url('assets/cabannaIllari.jpg');
+    }
+    100% {
+      background-image: url('assets/monumento.png');
+    }
+  }
+
+/* Efecto de transición entre imágenes */
+body {
+    animation: fadeTransition 3s ease-in-out; /* Transición elegante */
+}
+
+/* Estilo para la transición */
+@keyframes fadeTransition {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Estilo de la sección de inicio con logos */
+.contenedor-logotexto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para resaltar */
+    padding: 50px 20px; /* Sección más grande */
+    margin: 50px auto;
+    width: 85%; /* Ajuste del ancho */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-centro {
+    text-align: center;
+    color: white;
+}
+
+.texto-centro h1 {
+    font-size: 48px; /* Texto más grande */
+    margin: 0;
+}
+
+.texto-centro p {
+    font-size: 24px; /* Subtítulo más grande */
+    margin: 10px 0 0 0;
+}
+
+/* Estilo para los logos */
+.logo {
+    width: 200px;
+    height: auto;
+    margin: 0 15px; /* Margen a los lados */
+}
+
+/* Sección "Acerca de" */
+#acerca {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#acerca h2 {
+    font-size: 32px;
+}
+
+#acerca p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Sección de Servicios */
+#servicios {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.servicio {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.servicio h3 {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+}
+
+.servicio p {
+    font-size: 16px;
+}
+
+.btn-detalle {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-detalle:hover {
+    background-color: #555;
+}
+
+/* Sección de Contacto */
+#contacto {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#contacto h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+form input, form textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-logotexto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .texto-centro h1 {
+        font-size: 36px;
+    }
+
+    .servicio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form input, form textarea {
+        width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Ruana Por Boyacá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Menú de Navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página de Inicio -->
+    <section id="inicio">
+        <div class="contenedor-logotexto">
+            <img src="assest/logoDeRuana.png" alt="Logo Izquierda" class="logo">
+            <div class="texto-centro">
+                <h1>De Ruana Por Boyacá</h1>
+                <p>Explora lo mejor de Boyacá con nosotros</p>
+            </div>
+            <img src="assest/logoIllari.png" alt="Logo Derecha" class="logo">
+        </div>
+    </section>
+
+    <!-- Sección "Acerca de" -->
+    <section id="acerca">
+        <h2>Acerca de Nosotros</h2>
+        <p>En "De Ruana Por Boyacá" nos dedicamos a ofrecer las mejores experiencias turísticas, destacando lo mejor de nuestra tierra.</p>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <img src="planes-turisticos.jpg" alt="Planes Turísticos">
+            <h3>Planes Turísticos</h3>
+            <p>Ofrecemos los mejores planes para conocer los atractivos más emblemáticos de Boyacá.</p>
+        </div>
+        <div class="servicio">
+            <img src="hospedaje.jpg" alt="Hospedaje">
+            <h3>Hospedajes</h3>
+            <p>Disfruta de estancias cómodas y tradicionales en nuestros hospedajes seleccionados.</p>
+        </div>
+        <div class="servicio">
+            <img src="guianzas.jpg" alt="Guianzas">
+            <h3>Guianzas Turísticas</h3>
+            <p>Nuestros guías expertos te acompañarán para vivir la historia y cultura de Boyacá.</p>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="suEmail@gmail.com" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
+
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+    </section>
+
+</body>
+</html>
